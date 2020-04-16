@@ -20,4 +20,13 @@ public class Klant {
     public double getKortingspercentage() {
         return kortingspercentage;
     }
+
+    public String getNaam() {
+        return naam;
+    }
+
+    @Override
+    public String toString() {
+        return "\nop naam van: "+getNaam()+"(korting: "+getKortingspercentage()+(")");
+    }
 }

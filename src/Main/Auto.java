@@ -19,6 +19,12 @@ public class Auto {
         return prijsPerDag;
     }
 
+    public String getType() {
+        return type;
+    }
 
-
+    @Override
+    public String toString() {
+        return "\nautotype: " +getType()+" met prijs per dag: "+getPrijsPerDag();
+    }
 }
