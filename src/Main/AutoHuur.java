@@ -33,8 +33,8 @@ public class AutoHuur{
         return Huurder;
     }
 
-    public double TotaalPrijs(Auto auto){
-        return aantalDagen*auto.getPrijsPerDag();
+    public double TotaalPrijs(Klant klant, Auto auto){
+        return klant.getKortingspercentage()*(aantalDagen*auto.getPrijsPerDag());
 
     }
 
@@ -57,7 +57,7 @@ public class AutoHuur{
             s = s + "\naantal dagen: 0 en dat kost 0.0";
         }
         else{
-            s = s + "\naantal dagen: " + aantalDagen + " en dat kost " + TotaalPrijs(getGehuurdeAuto());
+            s = s + "\naantal dagen: " + aantalDagen + " en dat kost " + TotaalPrijs(getHuurder(),getGehuurdeAuto());
         }
 
 

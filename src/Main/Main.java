@@ -14,8 +14,7 @@ public class Main {
         Auto a1 = new Auto("Peugeot 207", 50);
         ah1.setGehuurdeAuto(a1);
         ah1.setAantalDagen(4);
-        System.out.println("Eerste autohuur: "+ ah1.toStringl());
-
+        System.out.println("\nEerste autohuur: "+ ah1.toStringl());
 
         AutoHuur ah2 = new AutoHuur( );
         Auto a2 = new Auto("Ferrari", 3500);

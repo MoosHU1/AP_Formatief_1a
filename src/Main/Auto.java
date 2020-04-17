@@ -7,7 +7,7 @@ public class Auto {
 
     public Auto(String tp, double prPd){
         type = tp;
-        prPd = prijsPerDag;
+        prijsPerDag = prPd;
 
     }
 
@@ -16,6 +16,7 @@ public class Auto {
     }
 
     public double getPrijsPerDag() {
+
         return prijsPerDag;
     }
 
